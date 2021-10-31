@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   useAdaptivity,
   AppRoot,
@@ -10,9 +10,9 @@ import {
   PanelHeader,
   Header,
   Group,
-  SimpleCell
-} from "@vkontakte/vkui";
-import "@vkontakte/vkui/dist/vkui.css";
+  SimpleCell,
+} from '@vkontakte/vkui';
+import '@vkontakte/vkui/dist/vkui.css';
 
 const App = () => {
   const { viewWidth } = useAdaptivity();

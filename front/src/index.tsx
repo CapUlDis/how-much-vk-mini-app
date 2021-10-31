@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import {
   AdaptivityProvider,
   ConfigProvider,
-} from "@vkontakte/vkui";
-import "@vkontakte/vkui/dist/vkui.css";
+} from '@vkontakte/vkui';
+import '@vkontakte/vkui/dist/vkui.css';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -15,7 +15,7 @@ ReactDOM.render(
       <App />
     </AdaptivityProvider>
   </ConfigProvider>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
 
 // If you want to start measuring performance in your app, pass a function
