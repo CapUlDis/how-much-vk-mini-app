@@ -5,16 +5,19 @@ import {
   ConfigProvider,
 } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
-import './index.css';
+import { RouterContext } from '@happysanta/router';
+import { router } from './router';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <ConfigProvider>
-    <AdaptivityProvider>
-      <App />
-    </AdaptivityProvider>
-  </ConfigProvider>,
+  <RouterContext.Provider value={router}>
+    <ConfigProvider>
+      <AdaptivityProvider>
+        <App />
+      </AdaptivityProvider>
+    </ConfigProvider>
+  </RouterContext.Provider>,
   document.getElementById('root'),
 );
 

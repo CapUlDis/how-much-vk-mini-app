@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   useAdaptivity,
   AppRoot,
@@ -6,29 +6,28 @@ import {
   SplitCol,
   ViewWidth,
   View,
-  Panel,
-  PanelHeader,
-  Header,
-  Group,
   SimpleCell,
 } from '@vkontakte/vkui';
+import { useLocation, useRouter } from '@happysanta/router';
+import {
+  VIEW_MAIN,
+  PANEL_GUESS,
+} from './router';
+import Guess from './components/panels/Guess';
+import './App.css';
 import '@vkontakte/vkui/dist/vkui.css';
 
 const App = () => {
   const { viewWidth } = useAdaptivity();
+  const location = useLocation();
+  const router = useRouter();
 
   return (
     <AppRoot>
-      <SplitLayout header={<PanelHeader separator={false} />}>
+      <SplitLayout>
         <SplitCol spaced={viewWidth && viewWidth > ViewWidth.MOBILE}>
-          <View activePanel="main">
-            <Panel id="main">
-              <PanelHeader>VKUI</PanelHeader>
-              <Group header={<Header mode="secondary">Items</Header>}>
-                <SimpleCell>Hello</SimpleCell>
-                <SimpleCell>World</SimpleCell>
-              </Group>
-            </Panel>
+          <View id={VIEW_MAIN} activePanel="PANEL_GUESS">
+            <Guess id={PANEL_GUESS} />
           </View>
         </SplitCol>
       </SplitLayout>
