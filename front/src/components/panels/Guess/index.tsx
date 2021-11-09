@@ -2,6 +2,7 @@ import React from 'react';
 import {
   Panel,
   PanelHeader,
+  Div,
 } from '@vkontakte/vkui';
 import Logo from '../../../img/logo.png';
 
@@ -20,6 +21,9 @@ const Guess: React.FunctionComponent<Props> = (props: Props) => {
       >
         СКОЛЬКО?
       </PanelHeader>
+      <Div>
+        УГАДАЙ СКОЛЬКО ВЕСИТ БАНАН И ВЫИГРАЙ ДО 300 000 ₽
+      </Div>
     </Panel>
   );
 };
