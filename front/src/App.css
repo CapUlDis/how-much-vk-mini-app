@@ -1,3 +1,36 @@
+@font-face {
+  font-family: "Mabry Pro Black";
+  src: url("fonts/Mabry Pro Black.eot");
+  src: local("☺"), url("fonts/Mabry Pro Black.woff") format("woff"),
+    url("fonts/Mabry Pro Black.ttf") format("truetype"),
+    url("fonts/Mabry Pro Black.svg") format("svg"),
+    url("fonts/Mabry Pro Black.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mabry Pro Black Italic";
+  src: url("fonts/Mabry Pro Black Italic.eot");
+  src: local("☺"), url("fonts/Mabry Pro Black Italic.woff") format("woff"),
+    url("fonts/Mabry Pro Black Italic.ttf") format("truetype"),
+    url("fonts/Mabry Pro Black Italic.svg") format("svg"),
+    url("fonts/Mabry Pro Black Italic.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mabry Pro Bold";
+  src: url("fonts/Mabry Pro Bold.eot");
+  src: local("☺"), url("fonts/Mabry Pro Bold.woff") format("woff"),
+    url("fonts/Mabry Pro Bold.ttf") format("truetype"),
+    url("fonts/Mabry Pro Bold.svg") format("svg"),
+    url("fonts/Mabry Pro Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .container {
   background-color: #fff8ef;
 }
