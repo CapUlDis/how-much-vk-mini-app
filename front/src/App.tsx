@@ -26,7 +26,7 @@ const App = () => {
     <AppRoot>
       <SplitLayout>
         <SplitCol spaced={viewWidth && viewWidth > ViewWidth.MOBILE}>
-          <View id={VIEW_MAIN} activePanel="PANEL_GUESS">
+          <View className="container" id={VIEW_MAIN} activePanel="PANEL_GUESS">
             <Guess id={PANEL_GUESS} />
           </View>
         </SplitCol>

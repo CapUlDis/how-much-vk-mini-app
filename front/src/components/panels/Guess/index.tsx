@@ -15,6 +15,7 @@ const Guess: React.FunctionComponent<Props> = (props: Props) => {
   return (
     <Panel id={id}>
       <PanelHeader
+        className="header"
         separator={false}
         left={<img src={Logo} width="24px" height="24px" alt="Logo" />}
       >
